@@ -1,6 +1,6 @@
 # 1. Introduction
 
-This document describes how to install the noBLE Companion app on a Windows PC.  This app is used to configure and control a noBLE device over Bluetooth Low Energy (BLE).
+The noBLE Companion app is used to configure and control a noBLE device.  
 
 The app is written in Python, so it can run on any platform that has a Python 3 runtime environment available. If your Windows PC has a Python 3 runtime environment already installed, you can skip the following section and jump to section #3.
 
@@ -62,7 +62,7 @@ which simply prints the version number and exits. In this example the version in
 <br>
 
 > [!TIP]
-> While this step is not strictly necessary, at this point you may want to run the following command, to update Python's installer "pip" to the latest version:
+> While the following step is not strictly necessary, at this point you may want to update Python's installer "pip" to the latest version, so that it stops printing the message "A new release of pip is available ..." each time you run it:
 
 ```
 python -m pip install --upgrade pip

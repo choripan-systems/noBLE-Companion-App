@@ -4,6 +4,8 @@ The noBLE Companion app is used to configure and control a noBLE device.
 
 The app is written in Python, so it can run on any platform that has a Python 3 runtime environment available. If your Windows PC has a Python 3 runtime environment already installed, you can skip the following section and jump to section #3.
 
+<br>
+
 # 2. Install Python
 
 Windows does not come with Python preinstalled, so unless you have already installed it for other purposes, you will need to install it now.  The good news is that Python is free and easy to install.
@@ -67,6 +69,8 @@ which simply prints the version number and exits. In this example the version in
 ```
 python -m pip install --upgrade pip
 ```
+
+<br>
 
 # 3. Install the noBLE Companion app
 
@@ -133,7 +137,7 @@ noBLE can bridge up to three BLE sensor devices; e.g. heart rate monitor, pedal 
 
 <br>
 
-![noBLE](./assets/Firmware-Install-Using-Windows/SS-13.png)
+![noBLE](./assets/App-Install-On-Windows/SS-13.png)
 
 <br>
 

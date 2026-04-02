@@ -70,9 +70,7 @@ python -m pip install --upgrade pip
 
 # 3. Install the noBLE Companion app
 
-The noBLE Companion app (nobleComp for short) is a Python app, so to install it we can leverage the Python runtime environment we have already set up.
-
-nobleComp uses a few optional Python packages that may need to be installed as follows:
+The noBLE Companion app (nobleComp for short) uses a few optional Python packages that may need to be installed as follows:
 
 ```
 python -m pip install bleak pyserial qrcode pillow
@@ -86,7 +84,7 @@ python .\nobleComp.py --version
 
 <br>
 
-![noBLE](./assets/Firmware-Install-Using-Windows/SS-10.png)
+![noBLE](./assets/App-Install-On-Windows/SS-10.png)
 
 <br>
 
@@ -107,7 +105,7 @@ python .\nobleComp.py --auto-scan
 
 <br>
 
-![noBLE](./assets/Firmware-Install-Using-Windows/SS-11.png)
+![noBLE](./assets/App-Install-On-Windows/SS-11.png)
 
 <br>
 
@@ -115,7 +113,7 @@ Pressing the green Connect button will cause nobleComp to connect to the selecte
 
 <br>
 
-![noBLE](./assets/Firmware-Install-Using-Windows/SS-12.png)
+![noBLE](./assets/App-Install-On-Windows/SS-12.png)
 
 <br>
 

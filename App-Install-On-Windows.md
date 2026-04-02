@@ -68,5 +68,74 @@ which simply prints the version number and exits. In this example the version in
 python -m pip install --upgrade pip
 ```
 
+# 3. Install the noBLE Companion app
+
+The noBLE Companion app (nobleComp for short) is a Python app, so to install it we can leverage the Python runtime environment we have already set up.
+
+nobleComp uses a few optional Python packages that may need to be installed as follows:
+
+```
+python -m pip install bleak pyserial qrcode pillow
+```
+
+The nobleComp app is distributed as a ZIP file with the name "nobleComp-YY-MM-DD.zip", where YY-MM-DD indicates the version number. Once you unzip the file, use the PowerShell terminal to go to the folder "nobleComp-YY-MM-DD" where the files were extracted, and run the following command to ensure the app was properly installed: 
+
+```
+python .\nobleComp.py --version
+```
+
+<br>
+
+![noBLE](./assets/Firmware-Install-Using-Windows/SS-10.png)
+
+<br>
+
+Unlike the firmware files, which once flashed onto the ESP32 device are no longer necessary and can be deleted, the files used by the nobleComp app should be moved into a more permanent folder, such as under your Windows account's home folder: $HOME/nobleComp.
+
+> [!TIP]
+> The supplied file "nobleComp.vbs" is a Visual Basic Script that can be used to create a desktop shortcut to launch the nobleComp app, and the file "nobleComp.ico" can be used as the icon for the shortcut.
+
+<br>
+
+# 4. Using the noBLE Companion app
+
+Launching the nobleComp app with the option --auto-scan will cause the app to start scanning for noBLE devices within reach.  By default the BLE scan lasts for 3 seconds, but it can be extended if needed.  Each device discovered is shown in the list box, with the first (and usually only) noBLE device discovered pre-selected:
+
+```
+python .\nobleComp.py --auto-scan
+```
+
+<br>
+
+![noBLE](./assets/Firmware-Install-Using-Windows/SS-11.png)
+
+<br>
+
+Pressing the green Connect button will cause nobleComp to connect to the selected noBLE device, and to read its current configuration and state, which is shown on the Device Configuration window.  When connecting to a brand new device all the settings will be at their factory defaults:
+
+<br>
+
+![noBLE](./assets/Firmware-Install-Using-Windows/SS-12.png)
+
+<br>
+
+The Device Information frame at the top of the window shows, among other things, the serial number of the device, and the version of the firmware that it is running.
+
+To set the WiFi credentials, simply enter the SSID (31 characters max) and the password (63 characters max) and press the Set button.  
+
+> [!IMPORTANT]
+> The ESP32 only supports WiFi networks that operate in the 2.4 GHz band, and that support at least WAP2 authentication.
+
+The RBG LED will briefly blink cyan 4 times a second while the device connects to the WiFi network.  Once it successfully connects to the network, the LED will turn solid cyan, and the WiFi credentials will get stored in non-volatile memory (NVRAM) to be used to auto-connect to the network whenever the device restarts.
+
+noBLE can bridge up to three BLE sensor devices; e.g. heart rate monitor, pedal or crank power meter, crank arm cadence sensor. If you intend to use noBLE to bridge any of these devices, you can press the corresponding button in the Sensor Bridging frame to enable the feature.  
+
+> [!TIP]
+> The BLE devices that noBLE discovered and paired with are shown in the Device Information frame.
+
+<br>
+
+![noBLE](./assets/Firmware-Install-Using-Windows/SS-13.png)
+
 <br>
 

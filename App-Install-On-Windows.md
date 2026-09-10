@@ -1,6 +1,6 @@
 # 1. Introduction
 
-The noBLE Companion app is used to configure and control a noBLE device.  
+This user guide is intended to help you install and use the noBLE Companion app, used to configure and control a noBLE device.  
 
 The app is written in Python, so it can run on any platform that has a Python 3 runtime environment available. If your Windows PC has a Python 3 runtime environment already installed, you can skip the following section and jump to section #3.
 
@@ -8,7 +8,7 @@ The app is written in Python, so it can run on any platform that has a Python 3 
 
 # 2. Install Python
 
-Windows does not come with Python preinstalled, so unless you have already installed it for other purposes, you will need to install it now.  The good news is that Python is free and easy to install.
+Microsoft Windows does not come with Python preinstalled, so unless you have already installed it for other purposes, you will need to install it now.  The good news is that Python is free and easy to install.
 
 On Windows you can install Python in two different ways:
 

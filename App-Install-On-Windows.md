@@ -1,6 +1,6 @@
 # 1. Introduction
 
-This user guide is intended to help you install and use the noBLE Companion app, used to configure and control a noBLE device.  
+This user guide is intended to help you install the noBLE Companion app, used to configure and control a noBLE device.  
 
 The app is written in Python, so it can run on any platform that has a Python 3 runtime environment available. If your Windows PC has a Python 3 runtime environment already installed, you can skip the following section and jump to section #3.
 
@@ -80,7 +80,7 @@ python -m pip install bleak pyserial qrcode pillow
 
 # 3. Install the noBLE Companion app
 
-The nobleComp app is distributed as a ZIP file with the name "nobleComp-YY-MM-DD.zip", where YY-MM-DD indicates the version number. Once you unzip the file, use the PowerShell terminal to go to the folder "nobleComp-YY-MM-DD" where the files were extracted, and run the following command to ensure the app was properly installed: 
+The nobleComp app is distributed as a simple ZIP file named "nobleComp-YY-MM-DD.zip", where YY-MM-DD indicates the version number. Once you unzip the file, use the PowerShell terminal to go to the folder "nobleComp-YY-MM-DD" where the files were extracted, and run the following command to ensure the app was properly installed: 
 
 ```
 python .\nobleComp.py --version
@@ -99,7 +99,7 @@ python .\nobleComp.py --version
 
 # 4. Using the noBLE Companion app
 
-Launching the nobleComp app with the option --auto-scan will cause the app to start scanning for noBLE devices within reach.  By default the BLE scan lasts for 3 seconds, but it can be extended if needed.  Each device discovered is shown in the list box, with the first (and usually only) noBLE device discovered pre-selected:
+Launching the nobleComp app with the option --help will list all the available command line options.  The --auto-scan option will cause the app to start scanning for noBLE devices within reach.  By default the BLE scan lasts for 3 seconds, but it can be extended if needed.  Each device discovered is shown in the list box, with the first (and usually only) noBLE device discovered already selected:
 
 ```
 python .\nobleComp.py --auto-scan
